@@ -19,6 +19,8 @@ export const GlobalStyle = createGlobalStyle`
     @media screen and(min-width: 700px){
         padding: 0 16px 0 16px;
     }
+
+  
    }
    :root{
         --color-primary:#09B451;
