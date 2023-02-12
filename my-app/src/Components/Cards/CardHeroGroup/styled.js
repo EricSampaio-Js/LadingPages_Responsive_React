@@ -16,6 +16,7 @@ padding: 17.68px 23.65px 12.09px 24.21px;
 `
 
 export const  Text = styled.h6`
+    font-family: 'Source Sans Pro';
     font-size:1.25rem;
     font-weight:600;
     line-height: 30px;

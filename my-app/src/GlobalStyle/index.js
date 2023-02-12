@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
    
 }
    body{
-        background:brown;
+        ${'' /* background:brown; */}
     @media screen and(min-width: 700px){
         padding: 0 16px 0 16px;
     }

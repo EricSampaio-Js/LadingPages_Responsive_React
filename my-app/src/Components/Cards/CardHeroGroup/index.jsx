@@ -1,7 +1,7 @@
 import React from "react";
 
 
-import IconGroupImg from './../../../assets/image/personGroupCard.svg'
+import personGroupImg from './../../../assets/image/personGroupCard.svg'
 
 import {
     Container,
@@ -17,11 +17,11 @@ function CardHero(){
             </Text>
 
             <GroupImag>
-                <img src={IconGroupImg} /> 
-                <img src={IconGroupImg} /> 
-                <img src={IconGroupImg} /> 
-                <img src={IconGroupImg} /> 
-                <img src={IconGroupImg} /> 
+                <img src={personGroupImg} alt='' /> 
+                <img src={personGroupImg} alt='' /> 
+                <img src={personGroupImg} alt='' /> 
+                <img src={personGroupImg} alt='' /> 
+                <img src={personGroupImg} alt='' /> 
             </GroupImag>
  
         </Container>

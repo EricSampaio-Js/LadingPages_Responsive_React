@@ -30,7 +30,10 @@ export const Buttons = styled.div`
   width: 6.625rem;
   height: 2.75rem;
 
-  ${'' /* font-family:var(); */}
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 1rem;
+  cursor:pointer;
 
    ${ ({styleds}) => configCss(styleds) }
   

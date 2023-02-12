@@ -1,10 +1,11 @@
-import  CardHero  from '../Components/Cards/CardHero';
+import  CardHero  from '../Components/Cards/CardHeroGroup';
+import  CardHeroInfor  from '../Components/Cards/CardHeroInfor';
 
 
 function Home(){
     return(
     <>
-       <CardHero />
+       <CardHeroInfor />
     </>
     )
 }
