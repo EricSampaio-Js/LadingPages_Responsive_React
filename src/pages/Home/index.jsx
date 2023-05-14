@@ -1,21 +1,50 @@
 import React from "react";
 
 
+import IconVacina from './../../image/vacina.png';
+import IconAgricultura from './../../image/agricultura.png';
+import IconCanaDeAcucar from './../../image/cana-de-acucar.png';
+import IconComputador from './../../image/computador.png';
+import IconDespesas from './../../image/despesas.png';
+import IconFinanceiro from './../../image/financeiro.png';
+import IconProcesso from './../../image/processo.png';
+import IconVaca from './../../image/vaca.png';
+
+
+import CardCouser from './../../Components/Cards/Couser'
+
 import {
     BannerHero,
     CardsHero,
     Container,
     Texts,
-    Title
+    TitleHero,
+    Courses,
+    TitleCourse
 } from './style';
+
+
+const ListOfCourses = [
+    {img:IconVacina, text:'enfermagem'},
+    {img:IconAgricultura, text:'desenvolvimento de sistemas'},
+    {img:IconCanaDeAcucar, text:'recursos humanos'},
+    {img:IconComputador, text:'administração'},
+    {img:IconDespesas, text:'açúcar e álcool'},
+    {img:IconFinanceiro, text:'agronegócio'},
+    {img:IconProcesso, text:'zootecnia'},
+    {img:IconVaca, text:'agropecuária'},
+]
+
+
+
 
 const Home = () => {
     return ( 
         <Container>
                 <BannerHero>
-                    <Title>
+                    <TitleHero>
                         Helcy Moreira Martins Aguiar
-                    </Title>
+                    </TitleHero>
                     <Texts>
                         Com mais de 20 anos de atuação, a unidade da Etec Professora Helcy 
                         Moreira Martins Aguiar se destaca no ensino médio e técnico, 
@@ -33,7 +62,7 @@ const Home = () => {
                     aprender uma profissão.
                    </h1>
                 </CardsHero>
-                <CardsHero  style={{'background':'var(--color-gra)'}}>
+                <CardsHero  style={{'background':'var(--color-gray)'}}>
                  <h1>
                     Contando com um corpo docente extremamente 
                     qualificado e estrutura física moderna, os cursos 
@@ -52,6 +81,19 @@ const Home = () => {
                     diferenciada para o aluno.
                  </h1>
                 </CardsHero>
+
+                <Courses>
+                    <TitleCourse>Cursos técnicos</TitleCourse>
+                    {ListOfCourses.map(({img,text})=>{
+                            return(
+                                <CardCouser image={img} text={text} />
+                            )
+                        })
+                    }
+                </Courses>
+
+
+
         </Container>
      );
 }

@@ -25,6 +25,8 @@ export const GlobalStyle = createGlobalStyle`
     --color-gray:#353436 ;
     --color-black: #111827 ;
     --color-neutral:#FFFFFF;
+    --color-neutralTwo:#F3F4F6;
+   
 
     ${'' /* ######### FONT ################# */}
 
@@ -35,7 +37,7 @@ export const GlobalStyle = createGlobalStyle`
 
 
 body{
-    background:gray;
+    background:#945050;
 }
 
 html{
