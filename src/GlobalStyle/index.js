@@ -36,7 +36,10 @@ export const GlobalStyle = createGlobalStyle`
 
 body{
     background:gray;
+}
 
+html{
+    ${'' /* font-size:16px; */}
 }
 
 
