@@ -20,7 +20,10 @@ import {
     Texts,
     TitleHero,
     Courses,
-    TitleCourse
+    TitleCourse,
+    JobInformation,
+    BannerJobs,
+    InforText
 } from './style';
 
 
@@ -41,7 +44,7 @@ const ListOfCourses = [
 const Home = () => {
     return ( 
         <Container>
-                <BannerHero>
+                {/* <BannerHero>
                     <TitleHero>
                         Helcy Moreira Martins Aguiar
                     </TitleHero>
@@ -55,7 +58,7 @@ const Home = () => {
 
                 <CardsHero style={{'background':'var( --primary-color)'}}>
                    <h1>
-                     Mantida pelo governo do Estado de São Paulo, os 
+                    Mantida pelo governo do Estado de São Paulo, os 
                     cursos oferecidos – além de qualidade ímpar – são 
                     totalmente gratuitos, levando para toda a população 
                     um ensino de qualidade e a oportunidade de 
@@ -80,7 +83,7 @@ const Home = () => {
                     obra qualificada e proporcionando uma experiência 
                     diferenciada para o aluno.
                  </h1>
-                </CardsHero>
+                </CardsHero> */}
 
                 <Courses>
                     <TitleCourse>Cursos técnicos</TitleCourse>
@@ -91,6 +94,26 @@ const Home = () => {
                         })
                     }
                 </Courses>
+
+                <JobInformation>
+                    <BannerJobs>
+                        <h1>Estágios e empregos</h1>
+                    </BannerJobs>
+                    <InforText>
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <h4>Publicado em 00/00/2000</h4>
+                        <a href="#">Mais mais sobre a vaga</a>
+                        
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <h4>Publicado em 00/00/2000</h4>
+                        <a href="#">Mais mais sobre a vaga</a>
+
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <h4>Publicado em 00/00/2000</h4>
+                        <a href="#">Mais mais sobre a vaga</a>
+                    </InforText>
+                </JobInformation>
+
 
 
 

@@ -8,7 +8,8 @@ grid-template-columns:1fr 1fr 1fr;
 grid-template-areas:
 'Banner Banner  Banner'
 'Card Card Card'
-'Couser Couser Couser';
+'Couser Couser Couser'
+'JobsInfor JobsInfor JobsInfor';
 
 `
 
@@ -86,5 +87,70 @@ font-family: var(--font-primary);
 font-weight: 600;
 font-size: 40px;
 
+`
 
+
+export const JobInformation = styled.div`
+    display:flex;
+    width:100%;
+    grid-area:JobsInfor;
+
+    background:var( --color-neutralTwo);
+    margin-top:100px;
+
+@media (max-width:883px){
+    display:flex;
+    flex-direction: column;
+}
+`
+export const BannerJobs = styled.div`
+display:flex;
+justify-content:center;
+align-items:center;
+
+width:50%;
+background:var( --primary-color);
+color:var( --color-neutral);
+
+@media (max-width:883px){
+width:100%;
+height:149px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+`
+export const InforText = styled.div`
+font-family: var(--font-primary);
+font-weight: 600;
+font-size: 1.5rem;
+
+background:var(--color-neutralTwo);
+color:var( --color-black);
+
+    
+padding:56px;
+transition:all 2s;
+
+@media (max-width:595px){
+    padding:24px;
+}
+
+>h3,h4{
+    margin-bottom:16px;
+}
+
+>h4{
+font-family: var( --font-second);
+font-weight: 400;
+font-size: 1.125rem;
+color:var(--color-gray);
+}
+>a{
+color:var(--primary-color);
+font-weight: 500;
+text-decoration: underline;
+margin-bottom:4.625rem;
+}
 `
