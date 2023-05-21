@@ -12,6 +12,7 @@ import IconVaca from './../../image/vaca.png';
 
 
 import CardCouser from './../../Components/Cards/Couser'
+import NewsCard from './../../Components/Cards/News'
 
 import {
     BannerHero,
@@ -23,7 +24,8 @@ import {
     TitleCourse,
     JobInformation,
     BannerJobs,
-    InforText
+    InforText,
+    News
 } from './style';
 
 
@@ -39,12 +41,10 @@ const ListOfCourses = [
 ]
 
 
-
-
 const Home = () => {
     return ( 
         <Container>
-                {/* <BannerHero>
+                <BannerHero>
                     <TitleHero>
                         Helcy Moreira Martins Aguiar
                     </TitleHero>
@@ -83,7 +83,7 @@ const Home = () => {
                     obra qualificada e proporcionando uma experiência 
                     diferenciada para o aluno.
                  </h1>
-                </CardsHero> */}
+                </CardsHero>
 
                 <Courses>
                     <TitleCourse>Cursos técnicos</TitleCourse>
@@ -114,7 +114,9 @@ const Home = () => {
                     </InforText>
                 </JobInformation>
 
-
+                <News>
+                    <NewsCard />
+                </News>
 
 
         </Container>

@@ -9,7 +9,8 @@ grid-template-areas:
 'Banner Banner  Banner'
 'Card Card Card'
 'Couser Couser Couser'
-'JobsInfor JobsInfor JobsInfor';
+'JobsInfor JobsInfor JobsInfor'
+'News News News';
 
 `
 
@@ -131,7 +132,7 @@ color:var( --color-black);
 
     
 padding:56px;
-transition:all 2s;
+transition:all 0.5s;
 
 @media (max-width:595px){
     padding:24px;
@@ -148,9 +149,14 @@ font-size: 1.125rem;
 color:var(--color-gray);
 }
 >a{
+display:inline-block;
 color:var(--primary-color);
 font-weight: 500;
 text-decoration: underline;
 margin-bottom:4.625rem;
 }
+`
+export const News = styled.div`
+grid-area:News;
+
 `
