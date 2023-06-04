@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     outline: none;
     border:none;
     text-decoration: none;
+    list-style:none;
 
     ;
 
@@ -26,18 +27,12 @@ export const GlobalStyle = createGlobalStyle`
     --color-black: #111827 ;
     --color-neutral:#FFFFFF;
     --color-neutralTwo:#F3F4F6;
-   
 
     ${'' /* ######### FONT ################# */}
 
     --font-primary:'Mukta', sans-serif;
     --font-second:'Inter', sans-serif;
 
-}
-
-
-body{
-    background:#945050;
 }
 
 html{
