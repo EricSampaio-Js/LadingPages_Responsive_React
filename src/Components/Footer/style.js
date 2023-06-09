@@ -5,13 +5,13 @@ export const ContainerFooter = styled.div`
 display:grid;
 width:100%;
 max-width:1216px;
-height:100%;
+
 grid-template-columns:repeat(3,1fr);
+grid-template-rows:1fr;
 
 justify-items:end;
 color:var(--color-neutral);
 margin:auto;
-
 @media (max-width: 1008px){
     justify-items:center;
     grid-template-columns:1fr;
@@ -20,10 +20,8 @@ margin:auto;
 
 export const  LogoFooter = styled.img`
 margin:4.625rem max(6.770833333333333vw, 50px) 0 0;
-
 width: 280px;
 height: 80px;
-
 `
 
 export const  Contact = styled.div`
@@ -71,8 +69,6 @@ ul{
     }
    
 }
-
-
 
 `
 

@@ -28,6 +28,9 @@ export const GlobalStyle = createGlobalStyle`
     --color-neutral:#FFFFFF;
     --color-neutralTwo:#F3F4F6;
 
+    --color-social-face:#3B5999;
+    --color-social-insta:#EE3A5D;
+    --color-social-linke:#00A0D0;
     ${'' /* ######### FONT ################# */}
 
     --font-primary:'Mukta', sans-serif;
